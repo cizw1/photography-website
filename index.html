@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography for weddings and special events.">
+  <title>Frame & Focus Studio | Photography</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">Frame <span>&</span> Focus</a>
+    <button class="menu-button" id="menu-button" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Packages</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Enquire now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">PHOTOGRAPHY • DHAKA, BANGLADESH</p>
+        <h1>Your moments.<br><span>Beautifully remembered.</span></h1>
+        <p class="hero-description">
+          Thoughtful photography for weddings, celebrations and life's
+          unforgettable moments.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#contact">Check availability</a>
+          <a class="button button-outline" href="#portfolio">Explore our work</a>
+        </div>
+      </div>
+      <p class="hero-note">A demonstration website — not a real studio.</p>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW FAVOURITE MOMENTS</p>
+        <h2>Stories worth keeping</h2>
+        <p>Every photograph tells a different story.</p>
+      </div>
+
+      <div class="gallery">
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+            alt="Wedding celebration">
+          <h3>Weddings</h3>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80"
+            alt="Couple celebrating together">
+          <h3>Engagements</h3>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80"
+            alt="Guests at a special event">
+          <h3>Events</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section packages" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">SIMPLE, CLEAR OPTIONS</p>
+        <h2>Photography packages</h2>
+        <p>Sample packages and prices for this prototype only.</p>
+      </div>
+
+      <div class="package-grid">
+        <article class="package-card">
+          <p class="eyebrow">01 / INTIMATE</p>
+          <h3>Essential</h3>
+          <p class="price">৳8,000 <small>/ sample price</small></p>
+          <p>For smaller celebrations and intimate gatherings.</p>
+          <a class="text-link" href="#contact">Ask about this package →</a>
+        </article>
+        <article class="package-card featured">
+          <p class="eyebrow">02 / CELEBRATE</p>
+          <h3>Signature</h3>
+          <p class="price">৳18,000 <small>/ sample price</small></p>
+          <p>For weddings and larger celebrations.</p>
+          <a class="text-link" href="#contact">Ask about this package →</a>
+        </article>
+        <article class="package-card">
+          <p class="eyebrow">03 / CUSTOM</p>
+          <h3>Custom event</h3>
+          <p class="price">Let's talk</p>
+          <p>A tailored option for your event and requirements.</p>
+          <a class="text-link" href="#contact">Request a quote →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div>
+        <p class="eyebrow">BEHIND THE CAMERA</p>
+        <h2>Real moments, told with care.</h2>
+      </div>
+      <p>
+        Frame & Focus is a fictional photography studio created to demonstrate
+        how a small business could present its work, explain its packages,
+        and receive enquiries through one simple website.
+      </p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S PLAN SOMETHING SPECIAL</p>
+        <h2>Tell us about your event</h2>
+        <p>Tell us about your event, and we'll get back to you.</p>
+      </div>
+
+      <form
+  id="enquiry-form"
+  action="https://formspree.io/f/xeaaadda"
+  method="POST"
+>
+        <div class="form-grid">
+          <label>
+            Your name *
+            <input name="name" required maxlength="100"
+              placeholder="Enter your name">
+          </label>
+          <label>
+            Phone or WhatsApp *
+            <input name="phone" required type="tel" maxlength="30"
+              placeholder="Your contact number">
+          </label>
+          <label>
+            Event type *
+            <select name="event" required>
+              <option value="">Choose an event</option>
+              <option>Wedding</option>
+              <option>Engagement</option>
+              <option>Birthday</option>
+              <option>Corporate event</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Event date *
+            <input name="date" required type="date">
+          </label>
+          <label class="full-width">
+            Event location
+            <input name="location" maxlength="150"
+              placeholder="e.g. Dhanmondi, Dhaka">
+          </label>
+          <label class="full-width">
+            Additional details
+            <textarea name="message" rows="4" maxlength="1000"
+              placeholder="Tell us about your plans..."></textarea>
+          </label>
+        </div>
+        <button class="button button-dark" type="submit">Send Enquiry</button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">Frame <span>&</span> Focus</a>
+    <p>Fictional business • Website prototype</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
